@@ -3,7 +3,7 @@ An open source project inspired by Oracle's APEX to be used with other databases
 
 ## The idea
 
-I personally love Oracle APEX. The idea of rapid web development for Database Administrators is a great idea. However, APEX can only run on an Oracle database. This is limiting to smaller projects, and it means I can't run it on a Raspberry Pi.
+I personally love Oracle APEX. The ability to rapidly create web development for Database Administrators is a great idea. However, APEX can only run on an Oracle database. This is limiting to smaller projects, and it means I can't run it on a Raspberry Pi.
 
 What if there was an open source alternative where the community could rapidly build web-apps out of a database like with Oracle APEX? That is the vision of this project.
 

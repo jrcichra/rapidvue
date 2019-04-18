@@ -13,7 +13,7 @@ Ideally you could run this on Postgres, MariaDB, and MYSQL. Inital support will 
 
 Ideally it will be very similar in functionality and interaction to Oracle APEX. There will be a web interface to build other web apps from. I've been learning React and it seems like the way to go for a dynamic component-based user interface. The user themselves only need to know SQL. We may need to do some generic SQL like how Hibernate does in order to allow for easy switchovers of underlying databases.
 
-Using React also makes sense to design as well as "plug-in" components into rapidreact. Someone can just write a little JSX and they can build new components that would be used in rapidreact.
+Using React also makes sense to design as well as "plug-in" components into RapidReact. Someone can just write a little JSX and they can build new components that would be used in RapidReact.
 
 ## Why "RapidReact?"
 

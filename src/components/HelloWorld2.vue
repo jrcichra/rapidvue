@@ -4,11 +4,6 @@
     <h2>Essential Lions</h2>
     <ul>
       <li>
-        <router-link to="/potato">
-          <a>Potato</a>
-        </router-link>
-      </li>
-      <li>
         <a href="https://vuejs.org" target="_blank">Core Docs</a>
       </li>
       <li>
@@ -48,7 +43,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      msg: "Jon is cool"
+      msg: "Jon is super awesome"
     };
   }
 };

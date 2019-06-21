@@ -3,8 +3,8 @@
     <h1>{{ msg }}</h1>
     <h2>Adding my own badass link</h2>
       <li>
-        <router-link to="/HelloWorld2/">
-        <a>HelloWorld2</a>
+        <router-link to="/HelloWorld/">
+        <a>HelloWorld</a>
         </router-link>
       </li>
     <h2>Essential Links</h2>
@@ -49,7 +49,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      msg: "Justin is really smelly"
+      msg: "Justin is smelly"
     };
   }
 };

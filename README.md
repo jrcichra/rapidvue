@@ -17,9 +17,9 @@ Using Vue also makes sense to design as well as "plug-in" components into RapidV
 
 ## Why "RapidVue?"
 
-This is the best thing that came to my head at the time. The underlying technology would be react, because of the component abilities and the future of web-apps. Oracle APEX uses the tried but true jQuery.
+This is the best thing that came to my head at the time. The underlying technology would be Vue, because of the component abilities and the future of web-apps. Oracle APEX uses the tried but true jQuery.
 
-In "theory", and from what my knowledge is right now, nothing would also stop this being a react-native / electron developing platform as well, allowing rapid development of web, desktop, and mobile apps just by writing SQL. Wouldn't that be wild?
+In "theory", and from what my knowledge is right now, nothing would also stop this being a vue-native / electron developing platform as well, allowing rapid development of web, desktop, and mobile apps just by writing SQL. Wouldn't that be wild?
 
 What does that mean for a DB <-> APP relationship? RapidVue will communicate with the backend with HTTP APIs for the most flexibility in the future.
 

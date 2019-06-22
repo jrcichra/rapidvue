@@ -4,10 +4,10 @@
       <v-list dense>
         <v-list-tile @click.stop="right = !right">
           <v-list-tile-action>
-            <v-icon>exit_to_app</v-icon>
+            <v-icon>open_with</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Open Temporary Drawer</v-list-tile-title>
+            <v-list-tile-title>Properties</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -22,10 +22,18 @@
       <v-list dense>
         <v-list-tile @click.stop="left = !left">
           <v-list-tile-action>
-            <v-icon>exit_to_app</v-icon>
+            <v-icon>pageview</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Page 2: Customers</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click.stop="left = !left">
+          <v-list-tile-action>
+            <v-icon>picture_in_picture</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Component</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -35,30 +43,18 @@
       <v-container fluid fill-height dark>
         <v-layout justify-center align-center>
           <v-flex shrink></v-flex>
-          <h1>Page Content goes here</h1>
+          <h1>Page Content goes here and goes on and on and on and on and on and on and on and on and on and on</h1>
+          <!-- <Drag></Drag> -->
         </v-layout>
       </v-container>
     </v-content>
+
     <v-navigation-drawer v-model="right" right temporary fixed dark></v-navigation-drawer>
-    <!-- Bottom Nav -->
-    <v-bottom-nav :active.sync="bottomNav" :value="true" dark absolute>
-      <v-btn color="teal" flat value="recent">
-        <span>Recent</span>
-        <v-icon>history</v-icon>
-      </v-btn>
-
-      <v-btn color="teal" flat value="favorites">
-        <span>Favorites</span>
-        <v-icon>favorite</v-icon>
-      </v-btn>
-
-      <v-btn color="teal" flat value="nearby">
-        <span>Nearby</span>
-        <v-icon>place</v-icon>
-      </v-btn>
-    </v-bottom-nav>
-    <!-- End Justin -->
-    <v-footer color="green" class="white--text" app>
+    <!-- Main Bottom Nav -->
+    <Types v-if="bottomMode == 'types'" @changeBottomMode="changeBottomMode"></Types>
+    <Regions v-if="bottomMode == 'regions'"></Regions>
+    <!-- End Bottom Nav -->
+    <v-footer color="green" class="white--text" app fixed>
       <span>RapidVue</span>
       <v-spacer></v-spacer>
       <span>&copy; 2019</span>
@@ -67,13 +63,27 @@
 </template>
 
 <script>
+import Types from "./Types";
+import Regions from "./Regions";
 export default {
+  components: {
+    Types,
+    Regions
+  },
+  methods: {
+    changeBottomMode(mode) {
+      this.bottomMode = mode;
+      console.log(mode);
+    }
+  },
   data: () => ({
     drawerLeft: null,
     drawerRight: null,
     right: false,
-    left: false
+    left: false,
+    bottomMode: "types"
   }),
+  name: "PageDesigner",
   props: {
     source: String
   }

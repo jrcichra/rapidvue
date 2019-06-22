@@ -9,7 +9,6 @@
 <script>
 // import HelloWorld from "./components/HelloWorld";
 import PageDesigner from "./components/PageDesigner";
-
 export default {
   name: "App",
   components: {

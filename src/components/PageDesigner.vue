@@ -39,26 +39,27 @@
         </v-layout>
       </v-container>
     </v-content>
+
     <v-navigation-drawer v-model="right" right temporary fixed dark></v-navigation-drawer>
     <!-- Bottom Nav -->
-    <v-bottom-nav :active.sync="bottomNav" :value="true" dark absolute>
-      <v-btn color="teal" flat value="recent">
+    <v-bottom-nav :active.sync="bottomNav" :value="bottomNav" dark fixed class="mb-4">
+      <v-btn color="teal" flat value="recent" draggable>
         <span>Recent</span>
         <v-icon>history</v-icon>
       </v-btn>
 
-      <v-btn color="teal" flat value="favorites">
-        <span>Favorites</span>
-        <v-icon>favorite</v-icon>
+      <v-btn color="teal" flat value="favorites" draggable>
+        <span>Sync</span>
+        <v-icon>sync</v-icon>
       </v-btn>
 
-      <v-btn color="teal" flat value="nearby">
+      <v-btn color="teal" flat value="nearby" draggable>
         <span>Nearby</span>
         <v-icon>place</v-icon>
       </v-btn>
     </v-bottom-nav>
-    <!-- End Justin -->
-    <v-footer color="green" class="white--text" app>
+    <!-- End Bottom Nav -->
+    <v-footer color="green" class="white--text" app fixed>
       <span>RapidVue</span>
       <v-spacer></v-spacer>
       <span>&copy; 2019</span>
@@ -72,7 +73,8 @@ export default {
     drawerLeft: null,
     drawerRight: null,
     right: false,
-    left: false
+    left: false,
+    bottomNav: true
   }),
   props: {
     source: String

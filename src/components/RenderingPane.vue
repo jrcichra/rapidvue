@@ -1,7 +1,7 @@
 <template>
   <div class="pane">
     <ul class="fa-ul">
-      <li v-for="element in elements" :key="element">
+      <li v-for="element in elements" :key="element" @click="print(element)">
         <span class="fa-li">
           <font-awesome-icon :icon="['far', 'folder']" />
         </span>
@@ -18,6 +18,11 @@ export default {
     return {
       elements: ["one", "two", "three", "four", "five"],
     };
+  },
+  methods: {
+    print: function (thing) {
+      console.log(thing);
+    },
   },
 };
 </script>

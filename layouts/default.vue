@@ -5,7 +5,14 @@
 export default {};
 </script>
 <style>
-html {
+html,
+body {
+  height: 100%;
+}
+#__nuxt {
+  height: 100%;
+}
+#__layout {
   height: 100%;
 }
 </style>

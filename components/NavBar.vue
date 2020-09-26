@@ -16,8 +16,6 @@ export default {
 
 <style scoped>
 .navbar {
-  display: flex;
-  flex-direction: row;
   background-color: rgb(39, 143, 79);
   border-radius: 3px;
   padding: 5px;

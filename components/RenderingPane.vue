@@ -1,14 +1,5 @@
 <template>
-  <div class="pane">
-    <ul class="fa-ul">
-      <li v-for="element in elements" :key="element" @click="print(element)">
-        <span class="fa-li">
-          <font-awesome-icon :icon="['far', 'folder']" />
-        </span>
-        {{ element }}
-      </li>
-    </ul>
-  </div>
+  <div class="pane">Rendering</div>
 </template>
 
 <script>
@@ -16,7 +7,22 @@ export default {
   name: "RenderingPane",
   data: function () {
     return {
-      elements: ["one", "two", "three", "four", "five"],
+      elements: {
+        "Page 1": [
+          {
+            Regions: [
+              {
+                "Page Navigation": undefined,
+              },
+            ],
+            "Breadcrumb Bar": [
+              {
+                "Sample Database Application": "this is an object",
+              },
+            ],
+          },
+        ],
+      },
     };
   },
   methods: {
@@ -29,17 +35,9 @@ export default {
 
 <style scoped>
 .pane {
-  display: flex;
-  flex-direction: column;
   border-radius: 3px;
   padding: 5px;
-  width: 25%;
-  transition-duration: 1s;
-  transition-delay: 0s;
-}
-.pane:hover {
   background-color: aqua;
-}
-ul {
+  text-align: center;
 }
 </style>

@@ -5,13 +5,8 @@
 </template>
 
 <script>
-import PageDesigner from "./components/PageDesigner.vue";
-
 export default {
   name: "App",
-  components: {
-    PageDesigner,
-  },
 };
 </script>
 

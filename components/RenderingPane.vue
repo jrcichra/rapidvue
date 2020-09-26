@@ -34,6 +34,11 @@ export default {
   border-radius: 3px;
   padding: 5px;
   width: 25%;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+.pane:hover {
+  background-color: aqua;
 }
 ul {
 }

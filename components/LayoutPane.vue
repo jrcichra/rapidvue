@@ -17,7 +17,7 @@ import draggable from "vuedraggable";
 export default {
   name: "LayoutPane",
   props: {
-    value: { type: Array, default: [] },
+    value: Array,
   },
   components: {
     draggable,

@@ -44,9 +44,9 @@ export default {
   height: 95%;
 }
 .mostheight {
-  height: 88%;
+  height: 80%;
 }
 .middleheight {
-  height: 13%;
+  height: 24.2%;
 }
 </style>

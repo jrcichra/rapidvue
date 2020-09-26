@@ -3,6 +3,14 @@ export default {
     components: true,
     moment: {
         timezone: true
+    }, buildModules: [
+        '@nuxtjs/fontawesome',
+    ],
+    fontawesome: {
+        icons: {
+            solid: true,
+            regular: true,
+        }
     },
     // router: {
     //     base: '/dist/'

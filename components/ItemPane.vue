@@ -1,5 +1,5 @@
 <template>
-  <div id="item" class="flexmidrow">Items</div>
+  <div id="item" class="flexmidrow shadow-lg rounded">Items</div>
 </template>
 
 <script>

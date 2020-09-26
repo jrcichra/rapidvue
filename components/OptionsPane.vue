@@ -1,5 +1,5 @@
 <template>
-  <div id="options" class="flexcol">Options</div>
+  <div id="options" class="shadow-lg rounded">Options</div>
 </template>
 
 <script>

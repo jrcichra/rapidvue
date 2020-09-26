@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="navbar">
+  <b-container fluid class="navbar shadow-lg rounded">
     <b-row>
       <b-col>
         <img class="logo" alt="Vue logo" src="../assets/logo.png" />
@@ -23,8 +23,8 @@ export default {
 <style scoped>
 .navbar {
   background-color: rgb(39, 143, 79);
-  border-radius: 3px;
   padding: 5px;
+  margin-top: 0.2%;
 }
 .logo {
   height: 40px;

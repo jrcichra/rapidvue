@@ -1,5 +1,5 @@
 <template>
-  <div class="pane">Rendering</div>
+  <div class="pane shadow-lg rounded">Rendering</div>
 </template>
 
 <script>

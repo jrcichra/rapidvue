@@ -1,5 +1,5 @@
 <template>
-  <div id="layout">Layout</div>
+  <div id="layout" class="shadow-lg rounded">Layout</div>
 </template>
 
 <script>
@@ -16,5 +16,6 @@ export default {
   text-align: center;
   background-color: goldenrod;
   height: 100%;
+  margin-bottom: 0.5%;
 }
 </style>

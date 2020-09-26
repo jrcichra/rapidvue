@@ -1,8 +1,14 @@
 <template>
-  <div class="navbar">
-    <img class="logo" alt="Vue logo" src="../assets/logo.png" />
-    <h1 class="title">RapidVue</h1>
-  </div>
+  <b-container fluid class="navbar">
+    <b-row>
+      <b-col>
+        <img class="logo" alt="Vue logo" src="../assets/logo.png" />
+      </b-col>
+      <b-col>
+        <h1 class="title">RapidVue</h1>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -21,11 +27,10 @@ export default {
   padding: 5px;
 }
 .logo {
-  align-content: center;
   height: 40px;
-  margin-right: 5px;
 }
 .title {
   font-size: 17px;
+  margin-top: 0.6rem;
 }
 </style>

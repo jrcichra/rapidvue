@@ -2,7 +2,7 @@
   <div id="designer" class="fullheight">
     <b-container class="fullheight" fluid>
       <b-row>
-        <b-col>
+        <b-col id="navbar">
           <NavBar />
         </b-col>
       </b-row>
@@ -30,17 +30,23 @@ export default {
   },
 };
 </script>
-
-<style scoped>
+<style >
 #designer {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+</style>
+<style scoped>
+#navbar {
+  padding-bottom: 1rem;
 }
 .fullheight {
-  height: 53rem;
+  height: 95%;
 }
 .mostheight {
-  height: 40rem;
+  height: 88%;
 }
 .middleheight {
-  height: 13rem;
+  height: 13%;
 }
 </style>

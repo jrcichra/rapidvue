@@ -1,5 +1,5 @@
 <template>
-  <div id="options" class="flexcol">options</div>
+  <div id="options" class="flexcol">Options</div>
 </template>
 
 <script>
@@ -15,5 +15,6 @@ export default {
 #options {
   text-align: center;
   background-color: red;
+  height: 100%;
 }
 </style>

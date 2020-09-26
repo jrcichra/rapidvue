@@ -1,28 +1,22 @@
 <template>
-  <div id="designer">
-    <b-container fluid>
+  <div id="designer" class="fullheight">
+    <b-container class="fullheight" fluid>
       <b-row>
         <b-col>
           <NavBar />
         </b-col>
       </b-row>
-      <b-row align-v="stretch">
-        <b-col cols="4">
+      <b-row align-v="stretch" class="fullheight">
+        <b-col cols="3">
           <RenderingPane />
         </b-col>
-        <b-col cols="4">
+        <b-col cols="6" class="mostheight">
           <LayoutPane />
+          <ItemPane class="middleheight" />
         </b-col>
-        <b-col cols="4">
+        <b-col cols="3">
           <OptionsPane />
         </b-col>
-      </b-row>
-      <b-row>
-        <b-col cols="4"></b-col>
-        <b-col cols="4">
-          <ItemPane />
-        </b-col>
-        <b-col cols="4"></b-col>
       </b-row>
     </b-container>
   </div>
@@ -39,6 +33,14 @@ export default {
 
 <style scoped>
 #designer {
-  height: 100%;
+}
+.fullheight {
+  height: 53rem;
+}
+.mostheight {
+  height: 40rem;
+}
+.middleheight {
+  height: 13rem;
 }
 </style>

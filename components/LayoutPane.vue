@@ -1,5 +1,5 @@
 <template>
-  <div id="layout" class="flexcol flexmidrow">layout</div>
+  <div id="layout">Layout</div>
 </template>
 
 <script>
@@ -15,5 +15,6 @@ export default {
 #layout {
   text-align: center;
   background-color: goldenrod;
+  height: 100%;
 }
 </style>

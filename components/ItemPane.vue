@@ -14,6 +14,6 @@ export default {
 <style scoped>
 #item {
   text-align: center;
-  background-color: goldenrod;
+  background-color: yellow;
 }
 </style>

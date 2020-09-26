@@ -35,9 +35,8 @@ export default {
 
 <style scoped>
 .pane {
-  border-radius: 3px;
-  padding: 5px;
   background-color: aqua;
   text-align: center;
+  height: 100%;
 }
 </style>
